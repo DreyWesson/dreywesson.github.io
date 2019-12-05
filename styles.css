@@ -7,7 +7,7 @@
   font-family: 'Tomorrow', sans-serif;
   padding-top: 7.5px;
   text-align: center;
-  background: url("https://previews.dropbox.com/p/thumb/AAohvbp6GhAr9DG5GSo9MEmroXQ9zevc-J_lgV-CnAsGbQfW5U9mYSOmpeEnnVUvOLsMW90Q7Zxw4z6YRavjXQgrS7T5ER8dS4_6js5TcrSNoBsCYM_MdXxiSwKmS3bBplawYYK6DFfv_kvAR_P0NxHwKV_E30lcjaJHJYygRbzuT1iJVisLQfSYaOBHqqTb2Tcsnakk-6EFdMu8pWSGOrBCxRWcVDuBy_4czHYQ-GQYFQ7HiJItqHmv9cY6ur7KFhu6jFzymXUj_PK9RcSIVL3s_w9aIFQx3wfkiGmsCcDFul4fl1tA65BSnGNbERv__1IyhyN65usdDKqep9HuFp0d0jJjWKRmKPsSYhAAnjnCfw/p.jpeg?fv_content=true&size_mode=5");
+  background: url("/img002.jpg");
 }
 .wesson h1{
   margin-top: 75px;
@@ -79,7 +79,7 @@
 
 
 .flex-blackjack-row-1{
-  background: url('https://previews.dropbox.com/p/thumb/AAoRi153pCAzA0THg6Y8bjK54Rxrjtm3IhFXC_DIaUcKCZIHajxL1lYkZ8yjxHTp_YnNadYE_b9Bd4NE0cK0525n9Pr-PsWSdi7ci2iEd952zbeYlfnukactTwhHQKHqLdWvMBmuDJfeNdsta94MX9o2sm4vSgokaAb1eDwofl8E3YNfJqKq82-BrGEnSI9bHwtPXW0gkniQufz9F3dL9mD-tqj5rz77oBzIbFw21TRwa0Bk0TfEimbejQUGTW3un-XfZQrQkOcxd0G-so7bUdoz1DlONAg6Ne0sQshqzGpHPFYzmpXuB0Pm_lDn2FLA8CMzpUmptFEkikBj3wcAtrDw/p.jpeg?size=2048x1536&size_mode=3')center;
+  background: url('/poker-table-background.jpg')center;
   color: #ffffff;
   background-size: 100%;
 }
