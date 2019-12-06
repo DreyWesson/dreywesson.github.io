@@ -55,7 +55,7 @@ getRepo.addEventListener('submit', (e)=> {
   // repo.appendChild(h4);
 
   const value = getRepo.querySelector('input[type="text"]').value;
-  console.log(JSON.stringify(value));
+  // console.log(JSON.stringify(value));
   const winSound = new Audio('/cash.mp3');
 
 
