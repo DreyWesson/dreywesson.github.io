@@ -16,6 +16,30 @@
   font-size: 100px;
 }
 
+.main-nav {
+  display: grid;
+  justify-content: space-around;
+  margin-top: 70px;
+  margin: 0 auto;
+}
+.main-nav a{
+  color: #657786;
+  text-decoration: none;
+}
+.main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  color: #657786;
+  font-size: 16px;
+}
+.main-nav li:hover{
+  box-shadow: 0 10px 50px #657786;
+}
+
 .container-1, .container-2,
 .container-github-repo,
 .container-3, .container-4,

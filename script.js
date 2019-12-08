@@ -82,6 +82,12 @@ getRepo.addEventListener('submit', (e)=> {
         else
           console.log(`${index}. ${element.full_name}`)
       });
+
+      console.log(`User's most forked repo >=50`);
+      data.map((element, index) => {
+        if (element.forks >= 50) 
+          console.log(`${index}. ${element.full_name} && fork-count: ${element.forks}`)
+      });
     } catch (error) {
       console.log(`An error occurred ${error}`)
     }
