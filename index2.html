@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <title>Rapid JavaScript</title>
 </head>
 <body>
-
   <div class="wesson">
+    <div>
       <h1>Mr. Wesson</h1>
       <h2 style="font-size:'large'; font-family: 'Dancing Script', cursive;">
         Lose yourself. Ride the mood.
       </h2>
+    </div>
   </div>
-<!-- <br> -->
+
   <nav class="main-nav">
     <ul>
-      <li><a href="#container-2">Generate Images</a></li>
-      <li><a href="#container-github-repo">GitHub Repos</a></li> 
-       <li><a href="#container-1">Calc Age</a></li>
-      <li><a href="#container-3">RPS</a></li> 
+      <!-- <li><a href="#container-2">Generate Images</a></li> -->
+      <!-- <li><a href="#container-github-repo">GitHub Repos</a></li> -->
+      <li><a href="#container-1">Calc Age</a></li>
+      <li><a href="#container-3">RPS</a></li>
       <li><a href="#container-4">Tweak Buttons</a></li>
       <li><a href="#container-5">Blackjack</a></li>
       <li><a href="#book-container">Book List</a></li>
@@ -32,23 +33,27 @@
   </nav>
 
   <div class="container-2" id="container-2">
-      <h2><a class="anchor" name="barlink">Generate Images</a></h2>
+      <h2>Generate Images</h2>
       <p style="color: #657786; font-family: 'Dancing Script', cursive;">Wherever, whenever, synchronize your mood.</p>
       <div class="flex-box-container-2"></div>
 
 	    <form id="add-mood" style="color: #657786;">
         <input type="text" placeholder="Input your mood in one word" />
-        <div><button class="btn btn-warning">Sync Mood</button></div>
+        <button class="btn btn-warning">Sync Mood</button>
       </form>
       <br>
   </div>
 
   <div class="container-github-repo" id="container-github-repo">
-      <h2>
-          
-        <a class="anchor" name="barlink">Fetch   <img src="https://icon-library.net/images/github-icon-vector/github-icon-vector-13.jpg" alt="">   Repos</a></h2>
+      <img src="https://icon-library.net/images/github-icon-vector/github-icon-vector-13.jpg" alt="">
+      <h3>User's Most Forked Repo</h3>
       <p style="color: #657786; font-family: 'Dancing Script', cursive;">Geeks only.</p>
+
+      <!-- <p style="color: #657786; font-family: 'Dancing Script', cursive;">Wherever, whenever, synchronize your mood.</p> -->
+      <!-- <div class="flex-box-repo-container"></div> -->
+
       <h3><span id="repo-result"></span></h3>
+
 	    <form id="fetch-repo" style="color: #657786;">
         <input type="text" placeholder="Enter GitHub username" />
         <button class="btn btn-warning" style="background-color: #6e5494; border-color: #6e5494; color: #ffffff;">Fetch Repo</button>
@@ -57,7 +62,7 @@
   </div>
 
   <div class="container-1" id="container-1">
-    <h2><a class="anchor" name="barlink">Calculate Your Age in Days</a></h2>
+    <h2>Calculate Your Age in Days</h2>
     <div class="flex-box-container-1">
       <div>
         <button class="btn btn-primary" id="age-calc">Click me</button>
@@ -72,7 +77,7 @@
   </div>
 
   <div class="container-3" id="container-3">
-    <h2><a class="anchor" name="barlink">Play: Rock, Paper, Scissors</a></h2>
+    <h2>Play: Rock, Paper, Scissors</h2>
     <h3><span id="roc-result">Let's play!</span></h3>
     <div class="flex-box-rps" id="flex-box-rps">
       <img id='rock' src="rocks.png" alt="" onclick="rpsGame(this)">
@@ -82,7 +87,7 @@
   </div>
 
   <div class="container-4" id="container-4">
-    <h2 id="change-my-color"><a class="anchor" name="barlink">Tweak Button Colors</a></h2>
+    <h2 id="change-my-color">Tweak Button Colors</h2>
     <br>
     <div class="flex-box-pick-color">
       <form action="">
@@ -97,12 +102,12 @@
       <button class="btn btn-danger">Yahoo</button>
       <button class="btn btn-warning">Google</button>
       <button class="btn btn-success">Facebook</button>
+    </div>
     <br>
-  </div>
   </div>
 
   <div class="container-5" id="container-5">
-    <h2><a class="anchor" name="barlink">Play: Blackjack</a></h2>
+    <h2>Play: Blackjack</h2>
     <h3><span id="blackjack-result">Let's play!</span></h3>
 
     <div class="flex-blackjack-row-3">
@@ -146,6 +151,18 @@
 
 
 
+
+
+
+
+
+
+  <!-- <div class="add-music">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
+    </iframe>
+  </div> -->
+
   <div class="container-x">
     <img src="https://cdn1.iconfinder.com/data/icons/gambling-27/128/gambling-10-512.png" alt="" srcset="">
     <h3 style="color: #657786; margin-top: 3px; font-family: 'Dancing Script', cursive;">
@@ -156,6 +173,6 @@
 
 
 
-  <script src="script.js"></script> 
+  <!-- <script src="script.js"></script>  -->
 </body>
 </html>

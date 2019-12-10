@@ -56,7 +56,7 @@ getRepo.addEventListener('submit', (e)=> {
 
   const value = getRepo.querySelector('input[type="text"]').value;
   // console.log(JSON.stringify(value));
-  const winSound = new Audio('cash.mp3');
+  const winSound = new Audio('/cash.mp3');
 
 
 
@@ -232,7 +232,13 @@ function emojiProcessor(uv) {
   return String.fromCodePoint(parseInt(uv, 16));
 }
 
-let cardList = ['2.png','3.png','4.png', '5.png','6.png','7.png', '8.png','9.png', '10.png', 'K.png','J.png','Q.png','A.png'];
+let cardList = ['/2.png','/3.png','/4.png', '/5.png','/6.png','/7.png', '/8.png','/9.png', '/10.png', '/K.png','/J.png','/Q.png','/A.png'];
+
+console.log(cardList[0], cardList[1], cardList[2], cardList[3],
+  cardList[4], cardList[5], cardList[6], cardList[7],
+  cardList[8], cardList[9], cardList[10], cardList[11],
+  cardList[12])
+
 let blackjackGame = {
   you: { 'scoreSpan': '#your-blackjack-score', 'div': '#your-box', 'score': 0},
   bot: { 'scoreSpan': '#bot-blackjack-score', 'div': '#bot-box', 'score': 0},
@@ -263,9 +269,9 @@ let blackjackGame = {
 }
 
 let {you, bot} = blackjackGame;
-const hitSound = new Audio('swish.m4a');
-const winSound = new Audio('cash.mp3');
-const lossSound = new Audio('aww.mp3');
+const hitSound = new Audio('/swish.m4a');
+const winSound = new Audio('/cash.mp3');
+const lossSound = new Audio('/aww.mp3');
 
 document.querySelector('#blackjack-hit-button').addEventListener('click', ()=> blackjackHit())
 //refactor later

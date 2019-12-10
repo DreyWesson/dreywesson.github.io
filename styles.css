@@ -1,187 +1,390 @@
 
-.wesson{
-  color: white;
-  height: auto;
-  padding-left: 10px;
-  font-family: 'Tomorrow', sans-serif;
-  padding-top: 7.5px;
-  text-align: center;
-  background: url("img002.jpg");
-}
-.wesson h1{
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  font-size: 100px;
-}
 
-.main-nav {
-  display: grid;
-  justify-content: space-around;
-  margin-top: 70px;
-  margin: 0 auto;
-}
-.main-nav a{
-  color: #657786;
-  text-decoration: none;
-}
-.main-nav li {
-  list-style-type: none;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  padding: 10px;
-  color: #657786;
-  font-size: 16px;
-}
-.main-nav li:hover{
-  box-shadow: 0 10px 50px #657786;
-}
+  .wesson{
+    color: white;
+    padding: 1px;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    background: url("img002.jpg");
+  }
+  .wesson h1{
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
 
-.container-1, .container-2,
-.container-github-repo,
-.container-3, .container-4,
-.container-5, .container-x{
-  border: 1px solid black;
-  /* border-radius: 4px; */
-  margin: 0 auto;
-  width: 95%;
-  text-align: center;
-  margin-top: 15px;
-  color: #171718;
-}
-
-.flex-box-container-1 div {
-  display: flex;
-  padding: 10px;
-  align-items: center;
-}
-
-.flex-box-container-1, .flex-box-container-2, 
-.flex-box-pick-color, .flex-blackjack-row-1,
-.flex-blackjack-row-2, .flex-blackjack-row-3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.flex-box-container-2 img {
-  margin: 10px;
-  /* box-shadow: 3px 3px 5px 6px #ccc; */
-  box-shadow: 0 10px 50px #657786;
-
-}
-
-.container-github-repo img {
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
-
-}
-/* .container-github-repo h4 {
-  color: #657786;
-} */
-.container-github-repo span {
-  color: #6e5494;
-}
-.container-github-repo span#repo-result {
-  color: #657786;
-}
-
-.flex-box-rps img{
-  width: 200px;
-  height: 200px;
-  padding: 15px;
-  margin: 15px;
-  border-radius: 50% 50%;
-}
-
-.flex-box-rps img:hover {
-  box-shadow: 0 10px 50px #657786;
-}
-
-
-.flex-blackjack-row-1{
-  background: url('/poker-table-background.jpg')center;
-  color: #ffffff;
-  background-size: 100%;
-}
-
-.flex-blackjack-row-1 div {
-  padding: 10px;
-  flex: 1;
-  text-align: center;
-  height: 350px;
-}
-
-.flex-blackjack-row-1 img{
-  width: 25%;
-  padding: 10px;
-}
-
-.flex-box-container-1 div {
-  display: flex;
-  padding: 10px;
-  align-items: center;
-}
-
-table, th, td {
-  padding: 5px;
-  border: 1px solid #657786;
-  color: #657786;
-}
-
-
-
-
-
-
-.container-x{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.container-x img{
-  margin-top: 7px;
-  height: 60px;
-  width: 60px;
+  .main-nav {
+    display: grid;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-left: 20px;
+    /* position: sticky;
+    top: 0; */
+    background-color: #f4f4f4;
+    padding: 7px;
+  }
+  .main-nav a{
+    color: #657786;
+    text-decoration: none;
+  }
+  .main-nav ul {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: #657786;
+    font-size: 16px;
+  }
+  .main-nav li:hover{
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    bottom: -2px;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0;
+  }
   
- }
+  .container-1, .container-2,
+  .container-github-repo,
+  .container-3, .container-4,
+  .container-5, .container-x{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    margin-top: 15px;
+    color: #171718;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .flex-box-container-1, .flex-box-container-2, 
+  .flex-blackjack-row-1, .flex-box-pick-color
+  .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  /* .flex-box-pick-color {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  } */
+  
+  .flex-box-container-2 img {
+    margin: 10px;
+    box-shadow: 0 10px 50px #657786;
+  }
+  
+  .container-github-repo img {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .container-github-repo span {
+    color: #6e5494;
+  }
+  .container-github-repo span#repo-result {
+    color: #657786;
+  }
+  .flex-box-rps img{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 50% 50%;
+  }
+  
+  .flex-box-rps img:hover {
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    top: -8px;
+  }
+  
+  .flex-blackjack-row-1{
+    background: url('poker-table-background.jpg')center;
+    color: #ffffff;
+    background-size: 100%;
+  }
+  
+  .flex-blackjack-row-1 div {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+  }
+  
+  .flex-blackjack-row-1 img{
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  table, th, td {
+    padding: 5px;
+    border: 1px solid #657786;
+    color: #657786;
+  }
+  
+  
+  
+  .container-x{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container-x img{
+    margin-top: 7px;
+    height: 60px;
+    width: 60px;
+    
+   }
+  
+   #add-mood, #fetch-repo{
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  #add-mood input, #fetch-repo input{
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 240px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+  }
+  
+  #add-mood button, #fetch-repo button{
+    display: block;
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 100px;
+    align-content: center;
+    margin: 0 auto;
+    border-left: 0;
+    box-sizing: border-box;
+  }
+  #add-mood:after, #fetch-repo:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
 
- #add-mood, #fetch-repo{
-  width: 370px;
-  margin: 0 auto;
-}
+@media screen and (min-width: 560px){
 
-#add-mood input, #fetch-repo input{
-  display: block;
-  margin: 0px auto;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  border-radius: 4px 0 0 4px;
-  box-sizing: border-box;
-  width: 250px;
-  float: left;
-}
+  .wesson{
+    color: white;
+    padding: 1px;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    background: url("img002.jpg");
+  }
+  .wesson h1{
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 100px;
+  }
 
-#add-mood button, #fetch-repo button{
-  padding: 10px 20px;
-  display: block;
-  margin: 0;
-  cursor: pointer;
-  /* width: 150px; */
-  /* float: left; */
-  margin: 0px auto;
-  border-left: 0;
+  h2::before{
+    margin-top: 0px;
+  }
+  
+  .main-nav {
+    display: grid;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    padding: 7px;
+  }
+  .main-nav a{
+    color: #657786;
+    text-decoration: none;
+  }
+  .main-nav ul {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: #657786;
+    font-size: 16px;
+  }
+  .main-nav li:hover{
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    bottom: -2px;
+  }
+  .container-1, .container-2,
+  .container-github-repo,
+  .container-3, .container-4,
+  .container-5, .container-x{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    margin-top: 15px;
+    color: #171718;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .flex-box-container-1, .flex-box-container-2, 
+  .flex-box-pick-color, .flex-blackjack-row-1,
+  .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .flex-box-container-2 img {
+    margin: 10px;
+    box-shadow: 0 10px 50px #657786;
+  }
+  
+  .container-github-repo img {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .container-github-repo span {
+    color: #6e5494;
+  }
+  .container-github-repo span#repo-result {
+    color: #657786;
+  }
+  .flex-box-rps img{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 50% 50%;
+  }
+  
+  .flex-box-rps img:hover {
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    top: -8px;
+  }
+  
+  .flex-blackjack-row-1{
+    background: url('poker-table-background.jpg')center;
+    color: #ffffff;
+    background-size: 100%;
+  }
+  
+  .flex-blackjack-row-1 div {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+  }
+  
+  .flex-blackjack-row-1 img{
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  table, th, td {
+    padding: 5px;
+    border: 1px solid #657786;
+    color: #657786;
+  }
+  
+  
+  
+  .container-x{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container-x img{
+    margin-top: 7px;
+    height: 60px;
+    width: 60px;
+    
+   }
+  
+   #add-mood, #fetch-repo{
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  #add-mood input, #fetch-repo input{
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 240px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+  }
+  
+  #add-mood button, #fetch-repo button{
+    display: block;
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 100px;
+    align-content: center;
+    margin: 0 auto;
+    border-left: 0;
+    box-sizing: border-box;
+  }
+  #add-mood:after, #fetch-repo:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
 
-}
-
-#add-mood:after, #fetch-repo:after{
-  content: '';
-  display: block;
-  clear: both;
 }
