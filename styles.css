@@ -89,6 +89,8 @@
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
+    width: 200px;
+    height: 200px;
   }
   
   .container-github-repo img {
@@ -103,8 +105,8 @@
     color: #657786;
   }
   .flex-box-rps img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     padding: 15px;
     margin: 15px;
     border-radius: 50% 50%;
