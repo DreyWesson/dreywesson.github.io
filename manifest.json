@@ -1,0 +1,16 @@
+{
+  "name": "Wesson",
+  "short_name": "Wesson",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#657786",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "card.png",
+      "sizes": "600x600",
+      "type": "image/png"
+    }
+  ]
+}

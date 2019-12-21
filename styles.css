@@ -1,11 +1,16 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
   .wesson{
     color: white;
-    padding: 1px;
+    padding: 1px 0;
     font-family: 'Tomorrow', sans-serif;
     text-align: center;
-    background: url("img002.jpg");
+    background: url("img002.webp");
+    width: 100%;
   }
   .wesson h1{
     justify-content: center;
@@ -14,17 +19,20 @@
   }
 
   .main-nav {
-    display: grid;
+    /* display: flex; */
+    overflow: auto;
+    white-space: nowrap;
     justify-content: space-around;
     margin: 0 auto;
     padding-left: 20px;
-    /* position: sticky;
-    top: 0; */
+    position: sticky;
+    top: 0;
     background-color: #f4f4f4;
     padding: 7px;
   }
   .main-nav a{
     color: #657786;
+    /* font-weight: bolder; */
     text-decoration: none;
   }
   .main-nav ul {
@@ -34,29 +42,28 @@
   .main-nav li {
     list-style-type: none;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     border-radius: 20px;
     padding: 10px;
     color: #657786;
     font-size: 16px;
+    font-weight: bold;
   }
-  .main-nav li:hover{
+
+    .main-nav li:hover, .main-nav li:focus{
     box-shadow: 0 10px 50px #657786;
     position: relative;
     bottom: -2px;
   }
-  h2::before {
-    content: "";
-    display: block;
-    height: 60px; /* fixed header height*/
-    margin: -60px 0 0;
-  }
+  /* div h2::before {
+    padding-top: 210px;
+  } */
   
   .container-1, .container-2,
   .container-github-repo,
   .container-3, .container-4,
-  .container-5, .container-x{
+  .container-5, .container-x, .container-about{
     border: 1px solid black;
     margin: 0 auto;
     width: 95%;
@@ -79,18 +86,16 @@
     justify-content: space-around;
     padding: 10px;
   }
-  /* .flex-box-pick-color {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  } */
+.flex-box-pick-color button {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+  }
   
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    /* height: 200px; */
   }
   
   .container-github-repo img {
@@ -119,7 +124,7 @@
   }
   
   .flex-blackjack-row-1{
-    background: url('poker-table-background.jpg')center;
+    background: url('poker-table-background.webp')center;
     color: #ffffff;
     background-size: 100%;
   }
@@ -128,11 +133,15 @@
     padding: 10px;
     flex: 1;
     text-align: center;
-    height: 350px;
+    height: auto;
+    min-height: 11rem;
   }
   
   .flex-blackjack-row-1 img{
-    width: 25%;
+    width: 50%;
+    padding: 10px;
+  }
+  .flex-blackjack-row-2 {
     padding: 10px;
   }
   
@@ -147,8 +156,229 @@
     border: 1px solid #657786;
     color: #657786;
   }
+
+  .container-about {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+
+
+  .container-x{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container-x img{
+    margin-top: 7px;
+    width: 15%;
+   }
+  
+   #add-mood, #fetch-repo{
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  #add-mood input, #fetch-repo input{
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+  }
+  
+  #add-mood button, #fetch-repo button{
+    display: block;
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 120px;
+    align-content: center;
+    margin: 0 auto;
+    border-left: 0;
+    box-sizing: border-box;
+  }
+  #add-mood:after, #fetch-repo:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+@media screen and (min-width: 480px){
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .wesson{
+    color: white;
+    padding: 1px;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    background: url("img002.webp");
+  }
+  .wesson h1{
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 75px;
+  }
+
+  .main-nav {
+    /* display: grid; */
+    overflow: auto;
+    white-space: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* padding-left: 20px; */
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    /* padding: 7px; */
+  }
+  .main-nav a{
+    color: #657786;
+    /* font-weight: bolder; */
+    text-decoration: none;
+  }
+  .main-nav ul {
+    /* margin: 0 auto; */
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: #657786;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .main-nav li:hover, .main-nav li:focus{
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    bottom: -2px;
+  }
+  /* h2::before {
+    margin-top: 10px;
+  } */
   
   
+  .container-1, .container-2,
+  .container-github-repo,
+  .container-3, .container-4,
+  .container-5, .container-x, .container-about{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    margin-top: 15px;
+    color: #171718;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .flex-box-container-1, .flex-box-container-2, 
+  .flex-blackjack-row-1, .flex-box-pick-color
+  .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+.flex-box-pick-color button {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .flex-box-container-2 img {
+    margin: 10px;
+    box-shadow: 0 10px 50px #657786;
+    width: 90%;
+    /* height: 200px; */
+  }
+  
+  .container-github-repo img {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .container-github-repo span {
+    color: #6e5494;
+  }
+  .container-github-repo span#repo-result {
+    color: #657786;
+  }
+  .flex-box-rps img{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 50% 50%;
+  }
+  
+  .flex-box-rps img:hover {
+    box-shadow: 0 10px 50px #657786;
+    position: relative;
+    top: -8px;
+  }
+  
+  .flex-blackjack-row-1{
+    background: url('poker-table-background.webp')center;
+    color: #ffffff;
+    background-size: 100%;
+  }
+  
+  .flex-blackjack-row-1 div {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: auto;
+    min-height: 20rem;
+  }
+  
+  .flex-blackjack-row-1 img{
+    width: 40%;
+    padding: 10px;
+  }
+  
+  .flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .flex-blackjack-row-2 img{
+    margin-top: 13rem;
+  }
+  
+  table, th, td {
+    padding: 5px;
+    border: 1px solid #657786;
+    color: #657786;
+  }
+
+  .container-about {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+
   
   .container-x{
     display: flex;
@@ -157,8 +387,8 @@
   }
   .container-x img{
     margin-top: 7px;
-    height: 60px;
-    width: 60px;
+    /* height: 60px; */
+    width: 15%;
     
    }
   
@@ -199,27 +429,34 @@
     clear: both;
   }
 
-@media screen and (min-width: 560px){
+}
 
+@media screen and (min-width: 768px){
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .wesson{
     color: white;
     padding: 1px;
     font-family: 'Tomorrow', sans-serif;
     text-align: center;
-    background: url("img002.jpg");
+    background: url("img002.webp");
+    width: 100%;
   }
   .wesson h1{
-    justify-content: center;
-    margin-top: 100px;
-    font-size: 100px;
-  }
-
-  h2::before{
-    margin-top: 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 10em;
   }
   
   .main-nav {
-    display: grid;
+    /* display: flex; */
+    overflow: auto;
+    white-space: nowrap;
     justify-content: space-around;
     margin: 0 auto;
     padding-left: 20px;
@@ -231,10 +468,12 @@
   .main-nav a{
     color: #657786;
     text-decoration: none;
+    /* font-weight: bolder; */
   }
   .main-nav ul {
-    margin: 0 auto;
-    display: inline-block;
+    /* margin: 0 auto; */
+    text-align: center;
+    display: block;
   }
   .main-nav li {
     list-style-type: none;
@@ -245,8 +484,9 @@
     padding: 10px;
     color: #657786;
     font-size: 16px;
+    font-weight: bold;
   }
-  .main-nav li:hover{
+  .main-nav li:hover, .main-nav li:focus{
     box-shadow: 0 10px 50px #657786;
     position: relative;
     bottom: -2px;
@@ -254,7 +494,7 @@
   .container-1, .container-2,
   .container-github-repo,
   .container-3, .container-4,
-  .container-5, .container-x{
+  .container-5, .container-x, .container-about{
     border: 1px solid black;
     margin: 0 auto;
     width: 95%;
@@ -281,6 +521,7 @@
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
+    width: 15%;
   }
   
   .container-github-repo img {
@@ -309,16 +550,18 @@
   }
   
   .flex-blackjack-row-1{
-    background: url('poker-table-background.jpg')center;
+    background: url('poker-table-background.webp')center;
     color: #ffffff;
     background-size: 100%;
+    /* height: auto; */
   }
   
   .flex-blackjack-row-1 div {
     padding: 10px;
     flex: 1;
+    height: auto;
     text-align: center;
-    height: 350px;
+    min-height: 25em;
   }
   
   .flex-blackjack-row-1 img{
@@ -331,6 +574,11 @@
     padding: 10px;
     align-items: center;
   }
+
+  .flex-blackjack-row-2 {
+    justify-content: center;
+  }
+
   
   table, th, td {
     padding: 5px;
@@ -338,17 +586,25 @@
     color: #657786;
   }
   
-  
+  .container-about {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+
+
+
   
   .container-x{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 2px;
   }
   .container-x img{
-    margin-top: 7px;
-    height: 60px;
-    width: 60px;
+    /* margin-top: 7px; */
+    /* height: 60px; */
+    width: 8%;
     
    }
   
@@ -377,7 +633,7 @@
     display: block;
     padding: 7px 10px;
     cursor: pointer;
-    width: 120px;
+    width: 100px;
     align-content: center;
     margin: 0 auto;
     border-left: 0;

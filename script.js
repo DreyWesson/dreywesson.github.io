@@ -1,4 +1,11 @@
 
+//emoji plugin
+let unifiedValue = ['1F610', '1F929', '1F614', '1F447'];
+function emojiProcessor(uv) {
+  return String.fromCodePoint(parseInt(uv, 16));
+}
+
+
 //Challenge 1: Your Age in Days
 document.querySelector('#age-calc').addEventListener('click', ()=> {
   let birthYear = +prompt("Whats your date of birth",'Enter year')
@@ -27,7 +34,6 @@ document.querySelector('#age-reset').addEventListener('click', ()=>{
 
 
 
-
 //Challenge 2: Mood Sync
 const getForm = document.forms['add-mood'];
 getForm.addEventListener('submit', (e)=> {
@@ -35,13 +41,11 @@ getForm.addEventListener('submit', (e)=> {
   let moodImages =document.querySelector("div.flex-box-container-2");
   let img = document.createElement('img');
   const value = getForm.querySelector('input[type="text"]').value;
-  console.log(value);
-  img.setAttribute('src',`https://source.unsplash.com/300x300/?${value}`);
+  img.setAttribute('src',`https://source.unsplash.com/400x400/?${value}`);
   moodImages.appendChild(img);
+  img.setAttribute('title',`${value}`);
+
 })
-
-
-
 
 
 
@@ -63,8 +67,8 @@ getRepo.addEventListener('submit', (e)=> {
 
 
   async function gitHub(user) {
-    try {const res = fetch(`https://api.github.com/users/${user}/repos`);
-      const response = fetch(`https://api.github.com/users/${user}`);
+    try {const res = fetch(`https://api.github.com/users/${user}/repos?per_page=100`);
+      const response = fetch(`https://api.github.com/users/${user}?per_page=100`);
       
       // Using promise.all for concurrency sake 
       // since the two fetch are not dependent on each other
@@ -78,15 +82,15 @@ getRepo.addEventListener('submit', (e)=> {
       console.log(data2);
       data.map((element, index) => {
         if (index < 10) 
-          console.log(`0${index}. ${element.full_name} (${element.id})`)
+          console.log(`0${index}. ${element.full_name} (${element.html_url})`)
         else
-          console.log(`${index}. ${element.full_name}`)
+          console.log(`${index}. ${element.full_name} (${element.html_url})`)
       });
 
-      console.log(`User's most forked repo >=50`);
+      console.log(`${user}'s most forked repo >=50 ${emojiProcessor(unifiedValue[3])}`);
       data.map((element, index) => {
         if (element.forks >= 50) 
-          console.log(`${index}. ${element.full_name} && fork-count: ${element.forks}`)
+          console.log(`${index}. ${element.full_name} && URL: ${element.html_url}`)
       });
     } catch (error) {
       console.log(`An error occurred ${error}`)
@@ -227,12 +231,7 @@ function randomColors() {
 
 
 //Blackjack
-let unifiedValue = ['1F610', '1F929', '1F614'];
-function emojiProcessor(uv) {
-  return String.fromCodePoint(parseInt(uv, 16));
-}
-
-let cardList = ['2.png','3.png','4.png', '5.png','6.png','7.png', '8.png','9.png', '10.png', 'K.png','J.png','Q.png','A.png'];
+let cardList = ['2.webp','3.webp','4.webp', '5.webp','6.webp','7.webp', '8.webp','9.webp', '10.webp', 'K.webp','J.webp','Q.webp','A.webp'];
 let blackjackGame = {
   you: { 'scoreSpan': '#your-blackjack-score', 'div': '#your-box', 'score': 0},
   bot: { 'scoreSpan': '#bot-blackjack-score', 'div': '#bot-box', 'score': 0},
