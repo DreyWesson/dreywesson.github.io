@@ -215,6 +215,32 @@
     display: block;
     clear: both;
   }
+  #repo-result {
+    font-size: 0.7em;
+  }
+
+button.js-push-btn {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #657786;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #657786;
+    /* font-size: 1.2em; */
+}
+button.js-push-btn:hover {
+  position: relative;
+  top: -1px;
+}
+
+
+section{
+  width: 95%;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 480px){
 
@@ -435,6 +461,26 @@
     content: '';
     display: block;
     clear: both;
+  }
+button.js-push-btn {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #657786;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #657786;
+  }
+  button.js-push-btn:hover {
+    position: relative;
+    top: -1px;
+  }
+
+  section{
+    width: 95%;
+    margin: 0 auto;
   }
 
 }
@@ -657,4 +703,24 @@
     clear: both;
   }
 
+button.js-push-btn {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #657786;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #657786;
+  }
+  button.js-push-btn:hover {
+    position: relative;
+    top: -1px;
+  }
+
+  section{
+    width: 95%;
+    margin: 0 auto;
+  }
 }

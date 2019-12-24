@@ -52,3 +52,29 @@ self.addEventListener('fetch', e => {
       })
     );
 });
+
+//Add a push listener
+self.addEventListener('push', e => {
+  const title = 'Yay a message';
+  const body = 'We have received a push notification';
+  const icon = '/notification.webp';
+  const tag = 'simple-push-example-tag';
+  e.waitUntil(
+    self.registration.showNotification(title, {
+      body: body,
+      icon: icon,
+      tag: tag
+    })
+  );
+});
+
+self.addEventListener('notificationclick', function(event) {
+  console.log('[Service Worker] Notification click Received.');
+
+  event.notification.close();
+
+  event.waitUntil(
+    clients.openWindow('https://dreywesson.github.io')
+  );
+});
+
