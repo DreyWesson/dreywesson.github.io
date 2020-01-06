@@ -1,9 +1,10 @@
-const staticCache = 'static-site-v4.8';
+const staticCache = 'static-site-v4.9';
 
 
 const cacheAssets = [
   '/','index.html', '/app.js', '/script.js', '/styles.css', 'manifest.json',
   '/img002.webp', 'rocks.webp', 'paper.webp', 'scissors.webp', 'card.webp',
+  'paper.svg', 'rocks.svg', 'scissors.svg',
   '2.webp', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp', '8.webp', 
   '9.webp', '10.webp', 'K.webp', 'J.webp', 'Q.webp', 'A.webp', 'aww.mp3', 
   'cash.mp3','swish.m4a', 'poker-table-background.webp','github-icon.webp', 'card.png',
