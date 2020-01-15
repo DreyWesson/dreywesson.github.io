@@ -55,7 +55,13 @@
     font-weight: bold;
   }
 
-    .main-nav li:hover, .main-nav li:focus{
+  label {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .main-nav li:hover, .main-nav li:focus{
     box-shadow: 0 10px 50px #657786;
     position: relative;
     bottom: -2px;
@@ -277,6 +283,13 @@ section{
     background-color: #f4f4f4;
     /* padding: 7px; */
   }
+
+  label {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
   .main-nav a{
     color: #000000;
     /* font-weight: bolder; */
@@ -544,6 +557,13 @@ button.js-push-btn {
     font-size: 16px;
     font-weight: bold;
   }
+
+  label {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
   .main-nav li:hover, .main-nav li:focus{
     box-shadow: 0 10px 50px #657786;
     position: relative;
