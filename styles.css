@@ -35,7 +35,7 @@
     padding: 7px;
   }
   .main-nav a{
-    color: #657786;
+    color: #000000;
     /* font-weight: bolder; */
     text-decoration: none;
   }
@@ -278,7 +278,7 @@ section{
     /* padding: 7px; */
   }
   .main-nav a{
-    color: #657786;
+    color: #000000;
     /* font-weight: bolder; */
     text-decoration: none;
   }
@@ -524,7 +524,7 @@ button.js-push-btn {
     padding: 7px;
   }
   .main-nav a{
-    color: #657786;
+    color: #000000;
     text-decoration: none;
     /* font-weight: bolder; */
   }
