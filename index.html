@@ -11,17 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="card.webp">
   <meta name="apple-mobile-web-app-status-bar" content="#657786">
   <meta name="theme-color" content="#657786">
-  <title>Wesson Portfolio</title>
+  <title>Rapid JavaScript</title>
 </head>
 <body>
 
   <div class="wesson">
-      <h1>Wesson</h1>
+      <h1>Mr. Wesson</h1>
       <h2 style="font-size:'large'; font-family: 'Dancing Script', cursive;">
         Lose yourself. Ride the mood.
       </h2>
@@ -45,8 +44,8 @@
       <div class="flex-box-container-2"></div>
 
       <form id="add-mood" style="color: #657786;">
-        <label for="mood"></label>
-        <input type="text" name="mood" placeholder="Input your mood in one word" />
+        <label for="mood">Sync Mood</label>
+        <input type="text" name="mood" id="mood" placeholder="Input your mood in one word" />
         <div><button class="btn btn-warning">Sync Mood</button></div>
       </form>
       <br>
@@ -59,8 +58,8 @@
       <p style="color: #657786; font-family: 'Dancing Script', cursive;">Geeks only.</p>
       <h3><span id="repo-result"></span></h3>
       <form id="fetch-repo" style="color: #657786;">
-        <label for="repo"></label>
-        <input type="text" name="repo" placeholder="Enter GitHub username" />
+        <label for="repo">Fetch Repo</label>
+        <input type="text" name="repo" id="repo" placeholder="Enter GitHub username" />
         <button class="btn btn-warning" type="button" style="background-color: #6e5494; border-color: #6e5494; color: #ffffff;">Fetch Repo</button>
       </form>
       <br>
@@ -85,9 +84,9 @@
     <h2><a class="anchor" name="barlink">Play: Rock, Paper, Scissors</a></h2>
     <h3><span id="roc-result">Let's play!</span></h3>
     <div class="flex-box-rps" id="flex-box-rps">
-      <img id='rock' src="rocks.svg" alt="" onclick="rpsGame(this)">
-      <img id='paper' src="paper.svg" alt="" onclick="rpsGame(this)">
-      <img id='scissors' src="scissors.svg" alt="" onclick="rpsGame(this)">
+      <img id='rock' src="rocks.svg" alt="rocks" onclick="rpsGame(this)">
+      <img id='paper' src="paper.svg" alt="paper" onclick="rpsGame(this)">
+      <img id='scissors' src="scissors.svg" alt="scissors" onclick="rpsGame(this)">
     </div>
   </div>
 
@@ -96,8 +95,8 @@
     <br>
     <div class="flex-box-pick-color">
       <form action="">
-        <label for="background"></label>
-        <select id="background" style="color: #020101;" onchange="buttonColorChange(this)">
+        <label for="background">Random</label>
+        <select id="background" name="background" style="color: #020101;" onchange="buttonColorChange(this)">
           <option value="random">Random</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
@@ -181,7 +180,27 @@
     </section>
   </div>
   
-  <script src="/app.js"></script>
-  <script src="/script.js"></script> 
+  <script src="app.js"></script>
+  <!-- <script>
+    // this code generates a notification popup
+    Notification.requestPermission(status => {
+      console.log(`Notification permission status: ${status}`)
+    });
+
+    function displayNotification() {
+      if (Notification.permission === 'granted') {
+        navigator.serviceWorker.getRegistration()
+          .then(reg => {
+            reg.showNotification('Hello world', {
+              body: `Here is a notification body`,
+              icon: `cards.webp`,
+              vibrate: [100, 50, 100],
+              data: {primaryKey: 1}
+            })
+          })
+      }
+}
+  </script> -->
+  <script src="script.js"></script> 
 </body>
 </html>
