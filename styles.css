@@ -35,7 +35,7 @@
     padding: 7px;
   }
   .main-nav a{
-    color: #000000;
+    color: #464646;
     /* font-weight: bolder; */
     text-decoration: none;
   }
@@ -291,7 +291,7 @@ section{
   }
 
   .main-nav a{
-    color: #000000;
+    color: #464646;
     /* font-weight: bolder; */
     text-decoration: none;
   }
@@ -537,7 +537,7 @@ button.js-push-btn {
     padding: 7px;
   }
   .main-nav a{
-    color: #000000;
+    color: #464646;
     text-decoration: none;
     /* font-weight: bolder; */
   }
@@ -563,7 +563,6 @@ button.js-push-btn {
     top: -9999px;
     left: -9999px;
   }
-  
   .main-nav li:hover, .main-nav li:focus{
     box-shadow: 0 10px 50px #657786;
     position: relative;

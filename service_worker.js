@@ -26,7 +26,7 @@ self.addEventListener('install', e => {
     caches.open(staticCache).then((cache) => {
       console.log(`Cashing Shell Assets...`);
       cache.addAll(cacheAssets);
-    })
+    }).then(()=> self.skipWaiting())
   );
 });
 
