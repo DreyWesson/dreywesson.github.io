@@ -89,3 +89,5 @@ self.addEventListener('notificationclose', function(event) {
     sendAnalyticsEvent('close', 'notification')
   );
 });
+// importScripts('dreywesson.github.io/node_modules/sw-offline-google-analytics/build/importScripts/sw-offline-google-analytics.dev.v0.0.25.js');
+// goog.offlineGoogleAnalytics.initialize();

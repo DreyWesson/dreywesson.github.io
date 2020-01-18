@@ -1,5 +1,6 @@
   // Set this to your tracking ID
   var trackingId = 'UA-156502028-1';
+  
 
   function sendAnalyticsEvent(eventAction, eventCategory) {
     'use strict';
