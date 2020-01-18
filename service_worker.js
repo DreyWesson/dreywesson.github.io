@@ -35,8 +35,8 @@ self.addEventListener('activate', e => {
   // console.log(`service worker has been activated`);
   e.waitUntil(
     caches.keys().then(keys => {
-      return Promise.all(keys
-        .filter(key => key !== staticCache)
+      return Promise.all(
+        keys.filter(key => key !== staticCache)
         .map(key => caches.delete(key))
       );
     })
@@ -79,3 +79,13 @@ self.addEventListener('notificationclick', function(event) {
   );
 });
 
+
+
+
+self.importScripts('/dreywesson.github.io/analytics-helper.js');
+
+self.addEventListener('notificationclose', function(event) {
+  event.waitUntil(
+    sendAnalyticsEvent('close', 'notification')
+  );
+});

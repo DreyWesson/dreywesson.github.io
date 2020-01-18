@@ -179,7 +179,7 @@
       <pre><code class="js-subscription-json"></code></pre>
     </section>
   </div>
-  
+
   <script src="app.js"></script>
   <!-- <script>
     // this code generates a notification popup
@@ -195,7 +195,13 @@
               body: `Here is a notification body`,
               icon: `cards.webp`,
               vibrate: [100, 50, 100],
-              data: {primaryKey: 1}
+              data: {primaryKey: 1},
+              actions: [
+                {action: 'explore', title: 'Explore this new world',
+                  icon: 'card.webp'},
+                {action: 'close', title: 'Close notification',
+                  icon: 'card.webp'},
+              ]
             })
           })
       }
