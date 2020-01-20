@@ -78,8 +78,20 @@ workbox.precaching.precacheAndRoute([
     "revision": "c41504b7239466b330156e7b0ce6ebae"
   },
   {
+    "url": "android-chrome-192x192.png",
+    "revision": "d9c1cc2c1f8acd69f979613e3c0d775d"
+  },
+  {
+    "url": "android-chrome-512x512.png",
+    "revision": "afc94310021721e0ea807176f0c18dad"
+  },
+  {
     "url": "app.js",
     "revision": "98c2a5cc325e03c75ac75c879a66505e"
+  },
+  {
+    "url": "apple-touch-icon.png",
+    "revision": "709e3b86057ca5810dc19838f068bb24"
   },
   {
     "url": "aww.mp3",
@@ -102,40 +114,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "915cfb823daeba22f1acc03c3da13bfe"
   },
   {
-    "url": "favicon_package_v0.16/android-chrome-192x192.png",
-    "revision": "d9c1cc2c1f8acd69f979613e3c0d775d"
-  },
-  {
-    "url": "favicon_package_v0.16/android-chrome-512x512.png",
-    "revision": "afc94310021721e0ea807176f0c18dad"
-  },
-  {
-    "url": "favicon_package_v0.16/apple-touch-icon.png",
-    "revision": "709e3b86057ca5810dc19838f068bb24"
-  },
-  {
-    "url": "favicon_package_v0.16/favicon-16x16.png",
+    "url": "favicon-16x16.png",
     "revision": "446b0e37c667348502a648c8c7820c4e"
   },
   {
-    "url": "favicon_package_v0.16/favicon-32x32.png",
+    "url": "favicon-32x32.png",
     "revision": "23298b1c7b53354e513314bcb3046d11"
   },
   {
-    "url": "favicon_package_v0.16/favicon.ico",
-    "revision": "936e2d334064b9681106bdd3765d8e1d"
-  },
-  {
-    "url": "favicon_package_v0.16/mstile-150x150.png",
-    "revision": "1feb18e453699f8a40259512b020694c"
-  },
-  {
-    "url": "favicon_package_v0.16/safari-pinned-tab.svg",
-    "revision": "25cabf09e95a84880eb298f558dc1117"
-  },
-  {
     "url": "favicon.ico",
-    "revision": "f29ad210c1b384ebf70aafa8b82bb0ea"
+    "revision": "936e2d334064b9681106bdd3765d8e1d"
   },
   {
     "url": "github-icon.webp",
@@ -179,7 +167,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "2cfa348a2d7902c850529c9c23b04371"
+    "revision": "6051206735a498c2fdbd55b423e9173c"
   },
   {
     "url": "J.webp",
@@ -191,7 +179,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "manifest.json",
-    "revision": "d5670f72a6f4d50d2e42b5b90cf032da"
+    "revision": "04bdb543dc62556e39b431232a2015d7"
+  },
+  {
+    "url": "mstile-150x150.png",
+    "revision": "1feb18e453699f8a40259512b020694c"
   },
   {
     "url": "notification.webp",
@@ -228,6 +220,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "rocks.webp",
     "revision": "286712be16d5108645236744edfb81fd"
+  },
+  {
+    "url": "safari-pinned-tab.svg",
+    "revision": "25cabf09e95a84880eb298f558dc1117"
   },
   {
     "url": "scissors.svg",
