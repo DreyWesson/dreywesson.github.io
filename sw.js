@@ -13,6 +13,12 @@ workbox.routing.registerRoute(
   new workbox.strategies.NetworkFirst({
     networkTimetoutSeconds: 5,
     cacheName: 'unsplash',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
   })
 );
 
@@ -21,6 +27,12 @@ workbox.routing.registerRoute(
   workbox.strategies.networkFirst({
     networkTimetoutSeconds: 5,
     cacheName: 'github',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
   })
 )
 
@@ -265,7 +277,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "src-sw.js",
-    "revision": "9077f24afc5033bffadec9dfde27baa5"
+    "revision": "f658e1b074a99d6ab7ad90fd344b19b7"
   },
   {
     "url": "styles.css",
