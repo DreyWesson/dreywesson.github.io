@@ -165,7 +165,7 @@
   <br>
   <div class="js-push-container">
     <p>
-    <button disabled class="js-push-btn">Subscribe for Push Notification</button>
+    <button disabled class="js-push-btn" style="position: relative; justify-content: space-evenly; max-width: 90%;"><img src="/notification.webp" alt="notification icon" style="width:7%; transform: rotate(-20deg);"/>Subscribe for Push Notification</button>
     </p>
     <br>
     <section class="subscription-details js-subscription-details is-invisible">
@@ -208,7 +208,9 @@
       }
 }
   </script> -->
-  <script src="script.js"></script> 
+
+  <script src="script.js"></script>
+  <!-- <script src="app.js"></script> -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

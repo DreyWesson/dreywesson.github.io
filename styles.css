@@ -184,6 +184,10 @@
     margin-top: 7px;
     width: 15%;
    }
+   .container-x button img{
+    margin-top: 7px;
+    width: 15%;
+   }
   
    #add-mood, #fetch-repo{
     max-width: 100%;
