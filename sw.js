@@ -275,7 +275,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles.css",
-    "revision": "4c147ded0b0c2ed78770fe4cb310f349"
+    "revision": "3c2430cc26a058990eec192c842a373c"
   },
   {
     "url": "swish.m4a",
