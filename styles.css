@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  color: #ffffff;
+  z-index: 100;
+}
+.skip-link:focus{
+  top: 0;
+}
   .wesson{
     color: white;
     padding: 1px 0;
@@ -256,6 +266,18 @@ section{
     margin: 0;
     padding: 0;
   }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: #ffffff;
+    z-index: 100;
+  }
+  .skip-link:focus{
+    top: 0;
+  }
+
   .wesson{
     color: white;
     padding: 1px;
@@ -507,6 +529,18 @@ button.js-push-btn {
     margin: 0;
     padding: 0;
   }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: #ffffff;
+    z-index: 100;
+  }
+  .skip-link:focus{
+    top: 0;
+  }
+  
   .wesson{
     color: white;
     padding: 1px;
