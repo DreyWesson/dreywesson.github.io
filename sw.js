@@ -127,11 +127,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "card-70x70.png",
-    "revision": "49d33e7f8733d9ac8e3b90d3426bda3b"
+    "revision": "d823cbe18a341515b73cdc94b61d0fab"
   },
   {
     "url": "card-70x70.webp",
     "revision": "0ea950a667e0564a49b9106161fc25e9"
+  },
+  {
+    "url": "card-resized.webp",
+    "revision": "d23bd80347a09fdaab632aa4e5d8504f"
   },
   {
     "url": "card.png",
@@ -203,7 +207,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "db916d467337212b2c2bb4b5aa784109"
+    "revision": "d016a7270b6e0e25d7ed5f5ca8c6b4f4"
   },
   {
     "url": "J.webp",
@@ -283,7 +287,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles.css",
-    "revision": "3967f5b788629a4d914c5a9d0fcde064"
+    "revision": "184d4930fc89e9e1b3ec235cf98c99ee"
   },
   {
     "url": "swish.m4a",
