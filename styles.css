@@ -193,7 +193,8 @@
 
   .container-x img{
     margin-top: 7px;
-    width: 15%;
+    /* width: 15%; */
+    max-width: 100%;
    }
  
   
@@ -460,8 +461,8 @@ section{
   .container-x img{
     margin-top: 7px;
     /* height: 60px; */
-    width: 15%;
-    
+    /* width: 15%; */
+    max-width: 100%;
    }
   
    #add-mood, #fetch-repo{
@@ -540,7 +541,7 @@ button.js-push-btn {
   .skip-link:focus{
     top: 0;
   }
-  
+
   .wesson{
     color: white;
     padding: 1px;
@@ -719,8 +720,8 @@ button.js-push-btn {
   .container-x img{
     /* margin-top: 7px; */
     /* height: 60px; */
-    width: 8%;
-    
+    /* width: 8%; */
+    max-width: 100%;
    }
   
    #add-mood, #fetch-repo{
