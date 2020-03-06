@@ -117,9 +117,13 @@
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
-    width: 90%;
+    width: 240px;
     max-width: 100%;
+    transition: 2s;
     /* height: 200px; */
+  }
+  .flex-box-container-2 img:hover {
+    transform: scale(1.1);
   }
   
   .container-github-repo img {
@@ -383,9 +387,13 @@ section{
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
-    width: 30%;
+    width: 240px;
     max-width: 100%;
+    transition: 2s;
     /* height: 200px; */
+  }
+  .flex-box-container-2 img:hover {
+    transform: scale(1.1);
   }
   
   .container-github-repo img {
@@ -638,8 +646,12 @@ button.js-push-btn {
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
-    width: 15%;
+    width: 240px;
     max-width: 100%;
+    transition: 2s;
+  }
+  .flex-box-container-2 img:hover {
+    transform: scale(1.1);
   }
   
   .container-github-repo img {
