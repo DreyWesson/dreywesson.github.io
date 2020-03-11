@@ -263,7 +263,7 @@ button.js-push-btn:hover {
   position: relative;
   top: -1px;
 }
-button.subscribe{
+button.subscribe {
   display: flex;
   margin: 0 auto;
   border: 1px solid white;
@@ -276,8 +276,10 @@ button.subscribe{
 }
 button.subscribe:hover {
   position: relative;
-  background-color: aquamarine;
   top: -1px;
+  background-color: #ffc107;
+  color: #171718;
+  border: 1px solid #ffc107;
 }
 
 section{
@@ -547,7 +549,7 @@ button.js-push-btn {
     position: relative;
     top: -1px;
   }
-  button.subscribe{
+  button.subscribe {
     display: flex;
     margin: 0 auto;
     border: 1px solid white;
@@ -560,8 +562,10 @@ button.js-push-btn {
   }
   button.subscribe:hover {
     position: relative;
-    background-color: aquamarine;
     top: -1px;
+    background-color: #ffc107;
+    color: #171718;
+    border: 1px solid #ffc107;
   }
   section{
     width: 95%;
@@ -827,7 +831,7 @@ button.js-push-btn {
     position: relative;
     top: -1px;
   }
-  button.subscribe{
+  button.subscribe {
     display: flex;
     margin: 0 auto;
     border: 1px solid white;
@@ -840,8 +844,10 @@ button.js-push-btn {
   }
   button.subscribe:hover {
     position: relative;
-    background-color: aquamarine;
     top: -1px;
+    background-color: #ffc107;
+    color: #171718;
+    border: 1px solid #ffc107;
   }
 
   section{

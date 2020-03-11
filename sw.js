@@ -207,7 +207,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "af346aac705afc05c40b53cc2a2665fa"
+    "revision": "960641692a2b68d9b5a3f45deee7bca6"
   },
   {
     "url": "J.webp",
@@ -287,7 +287,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles.css",
-    "revision": "51003ca3bf50a033b2551a925a18f71f"
+    "revision": "4dcf59d639a42ace7781acc715374764"
   },
   {
     "url": "swish.m4a",
