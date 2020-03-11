@@ -207,7 +207,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "c0fc3e7ed9cbd1d34665990c90b9ccaf"
+    "revision": "af346aac705afc05c40b53cc2a2665fa"
   },
   {
     "url": "J.webp",
