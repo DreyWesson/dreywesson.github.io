@@ -125,6 +125,9 @@
   .flex-box-container-2 img:hover {
     transform: scale(1.1);
   }
+  .flex-box-container-2 img:hover::after {
+    transform: scaleX(-1);
+  }
   
   .container-github-repo img {
     margin-top: 10px;
@@ -260,7 +263,22 @@ button.js-push-btn:hover {
   position: relative;
   top: -1px;
 }
-
+button.subscribe{
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 10px 50px #657786;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #657786;
+}
+button.subscribe:hover {
+  position: relative;
+  background-color: aquamarine;
+  top: -1px;
+}
 
 section{
   width: 95%;
@@ -395,6 +413,9 @@ section{
   .flex-box-container-2 img:hover {
     transform: scale(1.1);
   }
+  .flex-box-container-2 img:hover:after {
+    transform: scaleX(-1);
+  }
   
   .container-github-repo img {
     margin-top: 10px;
@@ -526,7 +547,22 @@ button.js-push-btn {
     position: relative;
     top: -1px;
   }
-
+  button.subscribe{
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #657786;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #657786;
+  }
+  button.subscribe:hover {
+    position: relative;
+    background-color: aquamarine;
+    top: -1px;
+  }
   section{
     width: 95%;
     margin: 0 auto;
@@ -651,7 +687,11 @@ button.js-push-btn {
     transition: 2s;
   }
   .flex-box-container-2 img:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    transform: scaleX(-1);
+  }
+  .flex-box-container-2 img:hover:after {
+    transform: scaleX(-1);
   }
   
   .container-github-repo img {
@@ -721,9 +761,6 @@ button.js-push-btn {
     border-radius: 15px;
   }
 
-
-
-
   
   .container-x{
     display: flex;
@@ -788,6 +825,22 @@ button.js-push-btn {
   }
   button.js-push-btn:hover {
     position: relative;
+    top: -1px;
+  }
+  button.subscribe{
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #657786;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #657786;
+  }
+  button.subscribe:hover {
+    position: relative;
+    background-color: aquamarine;
     top: -1px;
   }
 
