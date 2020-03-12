@@ -147,7 +147,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "card.webp",
-    "revision": "b4fa4d1c15d9ffc2d5af6ad3912ae9b6"
+    "revision": "9006d9209a5d89a00095d58253a202e7"
   },
   {
     "url": "cash.mp3",
