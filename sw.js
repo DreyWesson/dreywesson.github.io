@@ -231,11 +231,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "package-lock.json",
-    "revision": "3c23a6d56d14173a27daa897473e5d32"
+    "revision": "a71277a69780ef6a81e38f7341a303e8"
   },
   {
     "url": "package.json",
-    "revision": "966ef7d803e111e1120784fca9770cf5"
+    "revision": "583f2a36c9ccc97aff78714e42aa216d"
   },
   {
     "url": "paper.svg",
