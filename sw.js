@@ -207,7 +207,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "e3b3b7be6852beaf9266dea7c195b939"
+    "revision": "cfb8130927a546c38e7c95ab68cfa805"
   },
   {
     "url": "J.webp",
@@ -231,7 +231,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "package-lock.json",
-    "revision": "a71277a69780ef6a81e38f7341a303e8"
+    "revision": "f926ec8566f44baa56ad19e33ae4d21e"
   },
   {
     "url": "package.json",

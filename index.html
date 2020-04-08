@@ -1,191 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="Wesson playground">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  crossorigin="anonymous" async>
-  <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet" async>
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" async>
-  <link rel="stylesheet" href="/styles.css" async>
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="/card.webp>
-  <meta name="apple-mobile-web-app-status-bar" content="#657786">
-  <meta name="theme-color" content="#657786">
-  <title>Rapid JavaScript</title>
-</head>
-<body>
-  <div class="wesson">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Wesson playground" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+      async
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap"
+      rel="stylesheet"
+      async
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+      async
+    />
+    <link rel="stylesheet" href="/styles.css" async />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/card.webp>
+    <meta name="apple-mobile-web-app-status-bar" content="#657786" />
+    <meta name="theme-color" content="#657786" />
+    <title>Rapid JavaScript</title>
+  </head>
+  <body>
+    <div class="wesson">
       <h1>Mr. Wesson</h1>
-      <h2 style="font-size:'large'; font-family: 'Dancing Script', cursive;">
+      <h2 style="font-size: 'large'; font-family: 'Dancing Script', cursive;">
         Lose yourself. Ride the mood.
       </h2>
-      <a href="https://mailchi.mp/8daa681e5c23/dreywesson" style="text-decoration: none;">
+      <a
+        href="https://mailchi.mp/8daa681e5c23/dreywesson"
+        style="text-decoration: none;"
+      >
         <button class="subscribe">Join our list</button>
       </a>
-  </div>
-<!-- <br> -->
-<a href="#main-content" class="skip-link">Skip to Main Content</a>
+    </div>
+    <!-- <br> -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#container-2">Generate Images</a></li>
-      <li><a href="#container-github-repo">GitHub Repos</a></li> 
-       <li><a href="#container-1">Calc Age</a></li>
-      <li><a href="#container-3">RPS</a></li> 
-      <li><a href="#container-4">Tweak Buttons</a></li>
-      <li><a href="#container-5">Blackjack</a></li>
-      <li><a href="#book-container">Book List</a></li>
-    </ul>
-  </nav>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#container-2">Generate Images</a></li>
+        <li><a href="#container-github-repo">GitHub Repos</a></li>
+        <li><a href="#container-1">Calc Age</a></li>
+        <li><a href="#container-3">RPS</a></li>
+        <li><a href="#container-4">Tweak Buttons</a></li>
+        <li><a href="#container-5">Blackjack</a></li>
+        <li><a href="#book-container">Book List</a></li>
+      </ul>
+    </nav>
 
-  <div class="container-2" id="container-2">
-      <h2><a class="anchor" id="main-content" tabindex=-1 name="barlink">Generate Images</a></h2>
-      <p style="color: #657786; font-family: 'Dancing Script', cursive;">Wherever, whenever, synchronize your mood.</p>
+    <div class="container-2" id="container-2">
+      <h2>
+        <a class="anchor" id="main-content" tabindex="-1" name="barlink"
+          >Generate Images</a
+        >
+      </h2>
+      <p style="color: #657786; font-family: 'Dancing Script', cursive;">
+        Wherever, whenever, synchronize your mood.
+      </p>
       <div class="flex-box-container-2"></div>
 
       <form id="add-mood" style="color: #657786;">
         <label for="mood">Sync Mood</label>
-        <input type="text" name="mood" id="mood" placeholder="Input your mood in one word" />
+        <input
+          type="text"
+          name="mood"
+          id="mood"
+          placeholder="Input your mood in one word"
+        />
         <div><button class="btn btn-warning">Sync Mood</button></div>
       </form>
-      <br>
-  </div>
+      <br />
+    </div>
 
-  <div class="container-github-repo" id="container-github-repo">
+    <div class="container-github-repo" id="container-github-repo">
       <h2>
-          
-        <a class="anchor" name="barlink">Fetch Repos</a></h2>
-      <p style="color: #657786; font-family: 'Dancing Script', cursive;">Geeks only.</p>
-      <h3><span id="repo-result"></span></h3>
+        <a class="anchor" name="barlink">Fetch Repos</a>
+      </h2>
+      <p style="color: #657786; font-family: 'Dancing Script', cursive;">
+        Geeks only.
+      </p>
+      <h3><span id="repo-result">Result:</span></h3>
       <form id="fetch-repo" style="color: #657786;">
         <label for="repo">Fetch Repo</label>
-        <input type="text" name="repo" id="repo" placeholder="Enter GitHub username" />
-        <button class="btn btn-warning" type="button" style="background-color: #6e5494; border-color: #6e5494; color: #ffffff;">Fetch Repo</button>
+        <input
+          type="text"
+          name="repo"
+          id="repo"
+          placeholder="Enter GitHub username"
+        />
+        <button
+          class="btn btn-warning"
+          type="button"
+          style="
+            background-color: #6e5494;
+            border-color: #6e5494;
+            color: #ffffff;
+          "
+        >
+          Fetch Repo
+        </button>
       </form>
-      <br>
-  </div>
+      <br />
+    </div>
 
-  <div class="container-1" id="container-1">
-    <h2><a class="anchor" name="barlink">Calculate Your Age in Days</a></h2>
-    <div class="flex-box-container-1">
-      <div>
-        <button class="btn btn-primary" id="age-calc" style="color: #020101;">Click me</button>
+    <div class="container-1" id="container-1">
+      <h2><a class="anchor" name="barlink">Calculate Your Age in Days</a></h2>
+      <div class="flex-box-container-1">
+        <div>
+          <button class="btn btn-primary" id="age-calc" style="color: #020101;">
+            Click me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" id="age-reset">Reset</button>
+        </div>
       </div>
-      <div>
-        <button class="btn btn-danger" id="age-reset">Reset</button>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
       </div>
     </div>
-    <div class="flex-box-container-1">
-      <div id="flex-box-result"></div>
+
+    <div class="container-3" id="container-3">
+      <h2><a class="anchor" name="barlink">Play: Rock, Paper, Scissors</a></h2>
+      <h3><span id="roc-result">Let's play!</span></h3>
+      <div class="flex-box-rps" id="flex-box-rps">
+        <img id="rock" src="rocks.svg" alt="rocks" onclick="rpsGame(this)" />
+        <img id="paper" src="paper.svg" alt="paper" onclick="rpsGame(this)" />
+        <img
+          id="scissors"
+          src="scissors.svg"
+          alt="scissors"
+          onclick="rpsGame(this)"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="container-3" id="container-3">
-    <h2><a class="anchor" name="barlink">Play: Rock, Paper, Scissors</a></h2>
-    <h3><span id="roc-result">Let's play!</span></h3>
-    <div class="flex-box-rps" id="flex-box-rps">
-      <img id='rock' src="rocks.svg" alt="rocks" onclick="rpsGame(this)">
-      <img id='paper' src="paper.svg" alt="paper" onclick="rpsGame(this)">
-      <img id='scissors' src="scissors.svg" alt="scissors" onclick="rpsGame(this)">
+    <div class="container-4" id="container-4">
+      <h2 id="change-my-color">
+        <a class="anchor" name="barlink">Tweak Button Colors</a>
+      </h2>
+      <br />
+      <div class="flex-box-pick-color">
+        <form action="">
+          <label for="background">Random</label>
+          <select
+            id="background"
+            name="background"
+            style="color: #020101;"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+        <button class="btn btn-primary" style="color: #020101;">Floattr</button>
+        <button class="btn btn-danger">Yahoo</button>
+        <button class="btn btn-warning">Google</button>
+        <button class="btn btn-success" style="color: #020101;">
+          Facebook
+        </button>
+      </div>
+      <br />
     </div>
-  </div>
 
-  <div class="container-4" id="container-4">
-    <h2 id="change-my-color"><a class="anchor" name="barlink">Tweak Button Colors</a></h2>
-    <br>
-    <div class="flex-box-pick-color">
-      <form action="">
-        <label for="background">Random</label>
-        <select id="background" name="background" style="color: #020101;" onchange="buttonColorChange(this)">
-          <option value="random">Random</option>
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="reset">Reset</option>
-        </select>
-      </form>
-      <button class="btn btn-primary" style="color: #020101;">Floattr</button>
-      <button class="btn btn-danger">Yahoo</button>
-      <button class="btn btn-warning">Google</button>
-      <button class="btn btn-success" style="color: #020101;">Facebook</button>
-  </div>
-  <br>
-  </div>
+    <div class="container-5" id="container-5">
+      <h2><a class="anchor" name="barlink">Play: Blackjack</a></h2>
+      <h3><span id="blackjack-result">Let's play!</span></h3>
 
-  <div class="container-5" id="container-5">
-    <h2><a class="anchor" name="barlink">Play: Blackjack</a></h2>
-    <h3><span id="blackjack-result">Let's play!</span></h3>
-
-    <div class="flex-blackjack-row-3">
+      <div class="flex-blackjack-row-3">
         <table>
-            <tr>
-              <th colspan="3">Scoreboard</th>
-            </tr>
-            <tr>
-              <th>Wins</th>
-              <th>Draws</th>
-              <th>Loses</th>
-            </tr>
-            
-            <tr>
-              <td><span id="wins">0</span></td>
-              <td><span id="draws">0</span></td>
-              <td><span id="losses">0</span></td>
-            </tr>
-          </table>
-    </div>
+          <tr>
+            <th colspan="3">Scoreboard</th>
+          </tr>
+          <tr>
+            <th>Wins</th>
+            <th>Draws</th>
+            <th>Loses</th>
+          </tr>
 
-    <div class="flex-blackjack-row-1">
-      <div id="your-box">
-        <h2 style="font-family: 'Tomorrow', sans-serif;">You: <span id="your-blackjack-score">0</span></h2>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="draws">0</span></td>
+            <td><span id="losses">0</span></td>
+          </tr>
+        </table>
       </div>
 
-      <div id="bot-box">
-        <h2 style="font-family: 'Tomorrow', sans-serif;">Bot: <span id="bot-blackjack-score">0</span></h2>
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2 style="font-family: 'Tomorrow', sans-serif;">
+            You: <span id="your-blackjack-score">0</span>
+          </h2>
+        </div>
+
+        <div id="bot-box">
+          <h2 style="font-family: 'Tomorrow', sans-serif;">
+            Bot: <span id="bot-blackjack-score">0</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-2">
+        <button
+          class="btn btn-primary mr-2"
+          id="blackjack-hit-button"
+          style="color: #020101;"
+        >
+          Hit
+        </button>
+        <button class="btn btn-warning mr-2" id="blackjack-stand-button">
+          Stand
+        </button>
+        <button class="btn btn-danger mr-2" id="blackjack-deal-button">
+          Deal
+        </button>
       </div>
     </div>
 
-    <div class="flex-blackjack-row-2">
-        <button class="btn btn-primary mr-2" id="blackjack-hit-button" style="color: #020101;">Hit</button>
-        <button class="btn btn-warning mr-2" id="blackjack-stand-button">Stand</button>
-        <button class="btn btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+    <div class="container-x">
+      <img src="card.webp" alt="" srcset="" />
+      <h3
+        style="
+          color: #657786;
+          margin-top: 3px;
+          font-family: 'Dancing Script', cursive;
+        "
+      >
+        Hope you enjoyed this, half as much as we enjoyed coding it for you.
+      </h3>
+      <img src="card.webp" alt="" srcset="" />
     </div>
-
-  </div>
-
-
-
-  <div class="container-x">
-    <img src="card.webp" alt="" srcset="">
-    <h3 style="color: #657786; margin-top: 3px; font-family: 'Dancing Script', cursive;">
-    Hope you enjoyed this, half as much as we enjoyed coding it for you.
-    </h3>
-    <img src="card.webp" alt="" srcset="">
-  </div>
-  <br>
-  <div class="js-push-container">
-    <p>
-    <button disabled class="js-push-btn">&#x1F514; Subscribe for Push Notification</button>
-    </p>
-    <br>
-    <section class="subscription-details js-subscription-details is-invisible">
-      <!-- <p>Once you've subscribed your user, you'd send their subscription to your
+    <br />
+    <div class="js-push-container">
+      <p>
+        <button disabled class="js-push-btn">
+          &#x1F514; Subscribe for Push Notification
+        </button>
+      </p>
+      <br />
+      <section
+        class="subscription-details js-subscription-details is-invisible"
+      >
+        <!-- <p>Once you've subscribed your user, you'd send their subscription to your
       server to store in a database so that when you want to send a message
       you can lookup the subscription and send a message to it.</p>
       <p>To simplify things for this code lab copy the following details
       into the <a href="https://web-push-codelab.glitch.me/">Push Companion
       Site</a> and it'll send a push message for you, using the application
       server keys on the site - so make sure they match.</p> -->
-      <pre><code class="js-subscription-json"></code></pre>
-    </section>
-  </div>
+        <pre><code class="js-subscription-json"></code></pre>
+      </section>
+    </div>
 
-  <!-- <script src="app.js"></script> -->
+    <!-- <script src="app.js"></script> -->
 
-  <!-- <script>
+    <!-- <script>
     // this code generates a notification popup
     Notification.requestPermission(status => {
       console.log(`Notification permission status: ${status}`)
@@ -212,14 +292,14 @@
 }
   </script> -->
 
-  <script src="script.js"></script>
-  <!-- <script src="app.js"></script> -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-      })
-    }
-  </script>
-</body>
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+    </script>
+  </body>
 </html>
