@@ -115,7 +115,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "app.js",
-    "revision": "98c2a5cc325e03c75ac75c879a66505e"
+    "revision": "c0f5aa2a47d20e638a8478cb8c1066e5"
   },
   {
     "url": "apple-touch-icon.png",
@@ -275,7 +275,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "script.js",
-    "revision": "95c170a4e49a52dc815fd7a6611e7ca6"
+    "revision": "f566a9abeec6e58da198cdae9b72ff90"
   },
   {
     "url": "service_worker.js",
@@ -287,7 +287,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "styles.css",
-    "revision": "711a557e406b31bf9265348f55ca2948"
+    "revision": "b9e18cb72c56d73d5f107d3ba493850e"
   },
   {
     "url": "swish.m4a",

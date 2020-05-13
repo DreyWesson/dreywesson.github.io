@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,244 +10,258 @@
   color: #ffffff;
   z-index: 100;
 }
-.skip-link:focus{
+.skip-link:focus {
   top: 0;
   border: 3px solid whitesmoke;
   border-radius: 10px 10px 10px 0;
   padding: 6px;
 }
-  .wesson{
-    color: white;
-    padding: 1px 0;
-    font-family: 'Tomorrow', sans-serif;
-    text-align: center;
-    background: url("img002.webp");
-    width: 100%;
-  }
-  .wesson h1{
-    justify-content: center;
-    margin-top: 100px;
-    font-size: 50px;
-  }
+.wesson {
+  color: white;
+  padding: 1px 0;
+  font-family: "Tomorrow", sans-serif;
+  text-align: center;
+  background: url("img002.webp");
+  width: 100%;
+}
+.wesson h1 {
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 50px;
+}
 
-  p {
-    margin-bottom: 0;
-  }
+h2 a {
+  outline: none;
+}
 
-  .main-nav {
-    overflow: auto;
-    white-space: nowrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding-left: 20px;
-    position: sticky;
-    top: 0;
-    background-color: #f4f4f4;
-    padding: 7px;
-  }
-  .main-nav a{
-    color: #464646;
-    text-decoration: none;
-  }
-  .main-nav ul {
-    margin: 0 auto;
-    display: inline-block;
-  }
-  .main-nav li {
-    list-style-type: none;
-    display: inline-block;
-    border-radius: 20px;
-    padding: 10px;
-    color: #657786;
-    font-size: 16px;
-    font-weight: bold;
-  }
+p {
+  margin-bottom: 0;
+}
 
-  label {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
+.main-nav {
+  overflow: auto;
+  white-space: nowrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f4;
+  padding: 7px;
+}
+.main-nav a {
+  color: #464646;
+  text-decoration: none;
+}
+.main-nav ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+.main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px;
+  color: #657786;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  .main-nav li:hover, .main-nav li:focus{
-    box-shadow: 0 10px 50px #657786;
-    position: relative;
-    bottom: -2px;
-  }
-  
-  .container-1, .container-2,
-  .container-github-repo,
-  .container-3, .container-4,
-  .container-5, .container-x, .container-about{
-    border: 1px solid black;
-    margin: 0 auto;
-    width: 95%;
-    text-align: center;
-    margin-top: 15px;
-    color: #171718;
-  }
-  
-  .flex-box-container-1 div {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-  }
-  
-  .flex-box-container-1, .flex-box-container-2, 
-  .flex-blackjack-row-1, .flex-box-pick-color
-  .flex-blackjack-row-2, .flex-blackjack-row-3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  }
+label {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.main-nav li:hover,
+.main-nav li:focus {
+  box-shadow: 0 10px 50px #657786;
+  position: relative;
+  bottom: -2px;
+}
+
+.container-1,
+.container-2,
+.container-github-repo,
+.container-3,
+.container-4,
+.container-5,
+.container-x,
+.container-about {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+  margin-top: 15px;
+  color: #171718;
+}
+
+.flex-box-container-1 div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.flex-box-container-1,
+.flex-box-container-2,
+.flex-blackjack-row-1,
+.flex-box-pick-color .flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
 .flex-box-pick-color button {
-    margin-top: 10px;
-  }
-  
-  .flex-box-container-2 img {
-    margin: 10px;
-    box-shadow: 0 10px 50px #657786;
-    width: 240px;
-    max-width: 100%;
-    transition: 2s;
-  }
-  .flex-box-container-2 img:hover {
-    transform: scale(1.1);
-  }
-  .flex-box-container-2 img:hover::after {
-    transform: scaleX(-1);
-  }
-  
-  .container-github-repo img {
-    margin-top: 10px;
-    height: 80px;
-    width: 80px;
-  }
-  .container-github-repo span {
-    color: #6e5494;
-  }
-  .container-github-repo span#repo-result {
-    color: #657786;
-  }
-  .flex-box-rps img{
-    width: 100px;
-    height: 100px;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 50% 50%;
-  }
-  
-  .flex-box-rps img:hover {
-    box-shadow: 0 10px 50px #657786;
-    position: relative;
-    top: -8px;
-  }
-  
-  .flex-blackjack-row-1{
-    background: url('poker-table-background.webp')center;
-    color: #ffffff;
-    background-size: 100%;
-  }
-  
-  .flex-blackjack-row-1 div {
-    padding: 10px;
-    flex: 1;
-    text-align: center;
-    height: auto;
-    min-height: 11rem;
-  }
-  
-  .flex-blackjack-row-1 img{
-    width: 50%;
-    padding: 10px;
-  }
-  .flex-blackjack-row-2 {
-    padding: 10px;
-  }
-  
-  .flex-box-container-1 div {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-  }
-  
-  table, th, td {
-    padding: 5px;
-    border: 1px solid #657786;
-    color: #657786;
-  }
+  margin-top: 10px;
+}
 
-  .container-about {
-    padding: 10px;
-    border-radius: 15px;
-  }
+.flex-box-container-2 img {
+  margin: 10px;
+  box-shadow: 0 10px 50px #657786;
+  width: 240px;
+  max-width: 100%;
+  transition: 2s;
+}
+.flex-box-container-2 img:hover {
+  transform: scale(1.1);
+}
+.flex-box-container-2 img:hover::after {
+  transform: scaleX(-1);
+}
 
+.container-github-repo img {
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+.container-github-repo span {
+  color: #6e5494;
+}
+.container-github-repo span#repo-result {
+  color: #657786;
+}
+.flex-box-rps img {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 50% 50%;
+}
 
+.flex-box-rps img:hover {
+  box-shadow: 0 10px 50px #657786;
+  position: relative;
+  top: -8px;
+}
 
-  .container-x{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.flex-blackjack-row-1 {
+  background: url("poker-table-background.webp") center;
+  color: #ffffff;
+  background-size: 100%;
+}
 
-  .container-x img{
-    margin-top: 7px;
-    width: 15%;
-   }
- 
-  
-   #add-mood, #fetch-repo{
-    max-width: 100%;
-    width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: block;
-  }
-  
-  #add-mood input, #fetch-repo input{
-    display: block;
-    margin: 0px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    border-radius: 4px 0 0 4px;
-    box-sizing: border-box;
-    width: 90%;
-    box-sizing: border-box;
-    margin-bottom: 7px;
-  }
-  
-  #add-mood button, #fetch-repo button{
-    display: block;
-    padding: 7px 10px;
-    cursor: pointer;
-    width: 120px;
-    align-content: center;
-    margin: 0 auto;
-    border-left: 0;
-    box-sizing: border-box;
-  }
-  #add-mood:after, #fetch-repo:after{
-    content: '';
-    display: block;
-    clear: both;
-  }
-  #repo-result {
-    font-size: 0.7em;
-  }
+.flex-blackjack-row-1 div {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: auto;
+  min-height: 11rem;
+}
+
+.flex-blackjack-row-1 img {
+  width: 50%;
+  padding: 10px;
+}
+.flex-blackjack-row-2 {
+  padding: 10px;
+}
+
+.flex-box-container-1 div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid #657786;
+  color: #657786;
+}
+
+.container-about {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container-x {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-x img {
+  margin-top: 7px;
+  width: 15%;
+}
+
+#add-mood,
+#fetch-repo {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+#add-mood input,
+#fetch-repo input {
+  display: block;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  width: 90%;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+}
+
+#add-mood button,
+#fetch-repo button {
+  display: block;
+  padding: 7px 10px;
+  cursor: pointer;
+  width: 120px;
+  align-content: center;
+  margin: 0 auto;
+  border-left: 0;
+  box-sizing: border-box;
+}
+#add-mood:after,
+#fetch-repo:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#repo-result {
+  font-size: 0.7em;
+}
 
 button.js-push-btn {
-    display: flex;
-    margin: 0 auto;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 10px 50px #657786;
-    text-align: center;
-    padding: 5px 10px;
-    background-color: #ffffff;
-    color: #657786;
-    /* font-size: 1.2em; */
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 10px 50px #657786;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #657786;
+  /* font-size: 1.2em; */
 }
 button.js-push-btn:hover {
   position: relative;
@@ -273,13 +286,12 @@ button.subscribe:hover {
   border: 1px solid #ffc107;
 }
 
-section{
+section {
   width: 95%;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px){
-
+@media screen and (min-width: 480px) {
   * {
     margin: 0;
     padding: 0;
@@ -292,18 +304,18 @@ section{
     color: #ffffff;
     z-index: 100;
   }
-  .skip-link:focus{
+  .skip-link:focus {
     top: 0;
   }
 
-  .wesson{
+  .wesson {
     color: white;
     padding: 1px;
-    font-family: 'Tomorrow', sans-serif;
+    font-family: "Tomorrow", sans-serif;
     text-align: center;
     background: url("img002.webp");
   }
-  .wesson h1{
+  .wesson h1 {
     justify-content: center;
     margin-top: 100px;
     font-size: 75px;
@@ -329,7 +341,7 @@ section{
     left: -9999px;
   }
 
-  .main-nav a{
+  .main-nav a {
     color: #464646;
     text-decoration: none;
   }
@@ -349,17 +361,21 @@ section{
     font-size: 16px;
     font-weight: bold;
   }
-  .main-nav li:hover, .main-nav li:focus{
+  .main-nav li:hover,
+  .main-nav li:focus {
     box-shadow: 0 10px 50px #657786;
     position: relative;
     bottom: -2px;
   }
-  
-  
-  .container-1, .container-2,
+
+  .container-1,
+  .container-2,
   .container-github-repo,
-  .container-3, .container-4,
-  .container-5, .container-x, .container-about{
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-x,
+  .container-about {
     border: 1px solid black;
     margin: 0 auto;
     width: 95%;
@@ -367,25 +383,27 @@ section{
     margin-top: 15px;
     color: #171718;
   }
-  
+
   .flex-box-container-1 div {
     display: flex;
     padding: 10px;
     align-items: center;
   }
-  
-  .flex-box-container-1, .flex-box-container-2, 
-  .flex-blackjack-row-1, .flex-box-pick-color
-  .flex-blackjack-row-2, .flex-blackjack-row-3 {
+
+  .flex-box-container-1,
+  .flex-box-container-2,
+  .flex-blackjack-row-1,
+  .flex-box-pick-color .flex-blackjack-row-2,
+  .flex-blackjack-row-3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
   }
-.flex-box-pick-color button {
+  .flex-box-pick-color button {
     margin-top: 10px;
   }
-  
+
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
@@ -399,7 +417,7 @@ section{
   .flex-box-container-2 img:hover:after {
     transform: scaleX(-1);
   }
-  
+
   .container-github-repo img {
     margin-top: 10px;
     height: 80px;
@@ -411,26 +429,26 @@ section{
   .container-github-repo span#repo-result {
     color: #657786;
   }
-  .flex-box-rps img{
+  .flex-box-rps img {
     width: 100px;
     height: 100px;
     padding: 15px;
     margin: 15px;
     border-radius: 50% 50%;
   }
-  
+
   .flex-box-rps img:hover {
     box-shadow: 0 10px 50px #657786;
     position: relative;
     top: -8px;
   }
-  
-  .flex-blackjack-row-1{
-    background: url('poker-table-background.webp')center;
+
+  .flex-blackjack-row-1 {
+    background: url("poker-table-background.webp") center;
     color: #ffffff;
     background-size: 100%;
   }
-  
+
   .flex-blackjack-row-1 div {
     padding: 10px;
     flex: 1;
@@ -438,23 +456,25 @@ section{
     height: auto;
     min-height: 20rem;
   }
-  
-  .flex-blackjack-row-1 img{
+
+  .flex-blackjack-row-1 img {
     width: 40%;
     padding: 10px;
   }
-  
+
   .flex-box-container-1 div {
     display: flex;
     padding: 10px;
     align-items: center;
   }
 
-  .flex-blackjack-row-2 img{
+  .flex-blackjack-row-2 img {
     margin-top: 13rem;
   }
-  
-  table, th, td {
+
+  table,
+  th,
+  td {
     padding: 5px;
     border: 1px solid #657786;
     color: #657786;
@@ -465,28 +485,27 @@ section{
     border-radius: 15px;
   }
 
-
-  
-  .container-x{
+  .container-x {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  .container-x img{
+  .container-x img {
     margin-top: 7px;
     width: 15%;
-    
-   }
-  
-   #add-mood, #fetch-repo{
+  }
+
+  #add-mood,
+  #fetch-repo {
     max-width: 100%;
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     display: block;
   }
-  
-  #add-mood input, #fetch-repo input{
+
+  #add-mood input,
+  #fetch-repo input {
     display: block;
     margin: 0px auto;
     padding: 10px;
@@ -498,8 +517,9 @@ section{
     box-sizing: border-box;
     margin-bottom: 7px;
   }
-  
-  #add-mood button, #fetch-repo button{
+
+  #add-mood button,
+  #fetch-repo button {
     display: block;
     padding: 7px 10px;
     cursor: pointer;
@@ -509,12 +529,13 @@ section{
     border-left: 0;
     box-sizing: border-box;
   }
-  #add-mood:after, #fetch-repo:after{
-    content: '';
+  #add-mood:after,
+  #fetch-repo:after {
+    content: "";
     display: block;
     clear: both;
   }
-button.js-push-btn {
+  button.js-push-btn {
     display: flex;
     margin: 0 auto;
     border: 1px solid white;
@@ -547,15 +568,13 @@ button.js-push-btn {
     color: #171718;
     border: 1px solid #ffc107;
   }
-  section{
+  section {
     width: 95%;
     margin: 0 auto;
   }
-
 }
 
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -568,26 +587,26 @@ button.js-push-btn {
     color: #ffffff;
     z-index: 100;
   }
-  .skip-link:focus{
+  .skip-link:focus {
     top: 0;
   }
-  
-  .wesson{
+
+  .wesson {
     color: white;
     padding: 1px;
-    font-family: 'Tomorrow', sans-serif;
+    font-family: "Tomorrow", sans-serif;
     text-align: center;
     background: url("img002.webp");
     width: 100%;
   }
-  .wesson h1{
+  .wesson h1 {
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center;
     align-items: center; */
     font-size: 10em;
   }
-  
+
   p {
     margin-bottom: 0;
   }
@@ -603,7 +622,7 @@ button.js-push-btn {
     background-color: #f4f4f4;
     padding: 7px;
   }
-  .main-nav a{
+  .main-nav a {
     color: #464646;
     text-decoration: none;
   }
@@ -628,15 +647,20 @@ button.js-push-btn {
     top: -9999px;
     left: -9999px;
   }
-  .main-nav li:hover, .main-nav li:focus{
+  .main-nav li:hover,
+  .main-nav li:focus {
     box-shadow: 0 10px 50px #657786;
     position: relative;
     bottom: -2px;
   }
-  .container-1, .container-2,
+  .container-1,
+  .container-2,
   .container-github-repo,
-  .container-3, .container-4,
-  .container-5, .container-x, .container-about{
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-x,
+  .container-about {
     border: 1px solid black;
     margin: 0 auto;
     width: 95%;
@@ -644,22 +668,25 @@ button.js-push-btn {
     margin-top: 15px;
     color: #171718;
   }
-  
+
   .flex-box-container-1 div {
     display: flex;
     padding: 10px;
     align-items: center;
   }
-  
-  .flex-box-container-1, .flex-box-container-2, 
-  .flex-box-pick-color, .flex-blackjack-row-1,
-  .flex-blackjack-row-2, .flex-blackjack-row-3 {
+
+  .flex-box-container-1,
+  .flex-box-container-2,
+  .flex-box-pick-color,
+  .flex-blackjack-row-1,
+  .flex-blackjack-row-2,
+  .flex-blackjack-row-3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
   }
-  
+
   .flex-box-container-2 img {
     margin: 10px;
     box-shadow: 0 10px 50px #657786;
@@ -674,7 +701,7 @@ button.js-push-btn {
   .flex-box-container-2 img:hover:after {
     transform: scaleX(-1);
   }
-  
+
   .container-github-repo img {
     margin-top: 10px;
     height: 80px;
@@ -686,27 +713,27 @@ button.js-push-btn {
   .container-github-repo span#repo-result {
     color: #657786;
   }
-  .flex-box-rps img{
+  .flex-box-rps img {
     width: 200px;
     height: 200px;
     padding: 15px;
     margin: 15px;
     border-radius: 50% 50%;
   }
-  
+
   .flex-box-rps img:hover {
     box-shadow: 0 10px 50px #657786;
     position: relative;
     top: -8px;
   }
-  
-  .flex-blackjack-row-1{
-    background: url('poker-table-background.webp')center;
+
+  .flex-blackjack-row-1 {
+    background: url("poker-table-background.webp") center;
     color: #ffffff;
     background-size: 100%;
     /* height: auto; */
   }
-  
+
   .flex-blackjack-row-1 div {
     padding: 10px;
     flex: 1;
@@ -714,12 +741,12 @@ button.js-push-btn {
     text-align: center;
     min-height: 25em;
   }
-  
-  .flex-blackjack-row-1 img{
+
+  .flex-blackjack-row-1 img {
     width: 25%;
     padding: 10px;
   }
-  
+
   .flex-box-container-1 div {
     display: flex;
     padding: 10px;
@@ -730,39 +757,40 @@ button.js-push-btn {
     justify-content: center;
   }
 
-  
-  table, th, td {
+  table,
+  th,
+  td {
     padding: 5px;
     border: 1px solid #657786;
     color: #657786;
   }
-  
+
   .container-about {
     padding: 10px;
     border-radius: 15px;
   }
 
-  
-  .container-x{
+  .container-x {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2px;
   }
-  .container-x img{
+  .container-x img {
     width: 8%;
-    
-   }
-  
-   #add-mood, #fetch-repo{
+  }
+
+  #add-mood,
+  #fetch-repo {
     max-width: 100%;
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     display: block;
   }
-  
-  #add-mood input, #fetch-repo input{
+
+  #add-mood input,
+  #fetch-repo input {
     display: block;
     margin: 0px auto;
     padding: 10px;
@@ -774,8 +802,9 @@ button.js-push-btn {
     box-sizing: border-box;
     margin-bottom: 7px;
   }
-  
-  #add-mood button, #fetch-repo button{
+
+  #add-mood button,
+  #fetch-repo button {
     display: block;
     padding: 7px 10px;
     cursor: pointer;
@@ -785,13 +814,14 @@ button.js-push-btn {
     border-left: 0;
     box-sizing: border-box;
   }
-  #add-mood:after, #fetch-repo:after{
-    content: '';
+  #add-mood:after,
+  #fetch-repo:after {
+    content: "";
     display: block;
     clear: both;
   }
 
-button.js-push-btn {
+  button.js-push-btn {
     display: flex;
     margin: 0 auto;
     border: 1px solid white;
@@ -825,7 +855,7 @@ button.js-push-btn {
     border: 1px solid #ffc107;
   }
 
-  section{
+  section {
     width: 95%;
     margin: 0 auto;
   }
