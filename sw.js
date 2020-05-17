@@ -207,7 +207,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "c30e70b5d7a612f1aa1d31d8caeddbd0"
+    "revision": "8287e4d7a17c00274e87310331722f15"
   },
   {
     "url": "J.webp",
@@ -275,11 +275,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "script.js",
-    "revision": "f566a9abeec6e58da198cdae9b72ff90"
+    "revision": "5255ef8c5da135e7ee6e081884daef7a"
   },
   {
     "url": "service_worker.js",
-    "revision": "a6e3f0c8a63c7c30a80415f195d0fdf9"
+    "revision": "701979e14d7e970343b40f9c6a974d10"
   },
   {
     "url": "src-sw.js",

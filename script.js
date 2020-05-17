@@ -310,14 +310,10 @@ function blackjackDeal() {
     let yourImages = document
       .querySelector("#your-box")
       .querySelectorAll("img");
-    yourImages.forEach((val, i) => {
-      yourImages[i].remove();
-    });
+    yourImages.forEach((val, i) => yourImages[i].remove());
 
     let botImages = document.querySelector("#bot-box").querySelectorAll("img");
-    botImages.forEach((val, i) => {
-      botImages[i].remove();
-    });
+    botImages.forEach((val, i) => botImages[i].remove());
 
     you["score"] = 0;
     bot["score"] = 0;
@@ -339,14 +335,10 @@ document
 
 function updateScore(card, activePlayer) {
   if (card === Object.keys(blackjackGame.cardsMap)[12]) {
-    if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 21) {
+    if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 21)
       activePlayer["score"] += blackjackGame["cardsMap"][card][1];
-    } else {
-      activePlayer["score"] += blackjackGame["cardsMap"][card][0];
-    }
-  } else {
-    activePlayer["score"] += blackjackGame["cardsMap"][card];
-  }
+    else activePlayer["score"] += blackjackGame["cardsMap"][card][0];
+  } else activePlayer["score"] += blackjackGame["cardsMap"][card];
 }
 
 function scoreboard(card, activePlayer) {
@@ -360,9 +352,7 @@ function scoreboard(card, activePlayer) {
 }
 
 function sleep(ms) {
-  return new Promise((res, req) => {
-    setTimeout(res, ms);
-  });
+  return new Promise((res, req) => setTimeout(res, ms));
 }
 
 async function botLogic() {
@@ -390,15 +380,11 @@ function computeWinner() {
     } else if (you["score"] < bot["score"]) {
       blackjackGame["losses"]++;
       winner = bot;
-    } else if (you["score"] === bot["score"]) {
-      blackjackGame["draws"]++;
-    }
+    } else if (you["score"] === bot["score"]) blackjackGame["draws"]++;
   } else if (you["score"] > 21 && bot["score"] <= 21) {
     blackjackGame["losses"]++;
     winner = bot;
-  } else if (you["score"] > 21 && bot["score"] > 21) {
-    blackjackGame["draws"]++;
-  }
+  } else if (you["score"] > 21 && bot["score"] > 21) blackjackGame["draws"]++;
 
   return winner;
 }

@@ -28,6 +28,14 @@
     <meta name="apple-mobile-web-app-status-bar" content="#657786" />
     <meta name="theme-color" content="#657786" />
     <title>Rapid JavaScript</title>
+    <style>
+      .banner {
+        align-content: center;
+        display: none;
+        justify-content: center;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
@@ -305,6 +313,46 @@
       gtag("js", new Date());
 
       gtag("config", "UA-163513042-1");
+    </script>
+
+    <script>
+      let deferredPrompt;
+      window.addEventListener("beforeinstallprompt", (event) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        event.preventDefault();
+
+        // Stash the event so it can be triggered later.
+        deferredPrompt = event;
+
+        // Attach the install prompt to a user gesture
+        installBtn.addEventListener("click", (event) => {
+          // Show the prompt
+          deferredPrompt.prompt();
+
+          // Wait for the user to respond to the prompt
+          deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === "accepted")
+              console.log("User accepted the A2HS prompt");
+            else console.log("User dismissed the A2HS prompt");
+            deferredPrompt = null;
+          });
+        });
+
+        // Update UI notify the user they can add to home screen
+        installBanner.style.display = "flex";
+      });
+
+      window.addEventListener("appinstalled", (evt) =>
+        // captures user installing through other means other than userChoice
+        console.log("👍", "appinstalled", event)
+      );
+
+      window.addEventListener("load", () => {
+        if (navigator.standalone) console.log("Launched: Installed (iOS)");
+        else if (matchMedia("(display-mode: standalone)").matches)
+          console.log("Launched: Installed");
+        else console.log("Launched: Browser Tab");
+      });
     </script>
 
     <script src="script.js"></script>
